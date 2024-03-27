@@ -1,4 +1,5 @@
 import { VStack } from "@chakra-ui/react"
+
 export default function Cart() {
   return(
     <VStack
@@ -8,7 +9,6 @@ export default function Cart() {
     alignItems="flex-start"
     bg="gray.50"
   >
-    <h1>Hello Next.js</h1>
     <h1>Hello Next.js</h1>
   </VStack>
   )
