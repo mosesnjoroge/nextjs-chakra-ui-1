@@ -71,7 +71,7 @@ export default function Details() {
           </Checkbox>
         </GridItem>
         <GridItem colSpan={2}>
-          <Button size="lg" w="full">
+          <Button colorScheme="brand" size="lg" w="full">
             Place Order
           </Button>
         </GridItem>
