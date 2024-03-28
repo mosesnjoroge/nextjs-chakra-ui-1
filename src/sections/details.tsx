@@ -8,11 +8,13 @@ import {
   GridItem,
   Select,
   Checkbox,
-  Button
+  Button,
+  useBreakpointValue
 }
 from "@chakra-ui/react";
 
 export default function Details() {
+  const colSpan = useBreakpointValue({base:2,md: 1});
   return(
     <VStack
       w="full"
@@ -27,32 +29,32 @@ export default function Details() {
           If you already have an account, click her to log in.
         </Text>
       </VStack>
-      <SimpleGrid column={2} columnGap={3} rowGap={6} w={"full"}>
-        <GridItem colSpan={1}>
+      <SimpleGrid column={2} columnGap={3} rowGap={6} w="full">
+        <GridItem colSpan={colSpan}>
           <FormControl>
             <FormLabel>First Name</FormLabel>
             <Input placeholder="John"/>
           </FormControl>
         </GridItem>
-        <GridItem colSpan={1}>
+        <GridItem colSpan={colSpan}>
           <FormControl>
             <FormLabel>Last Name</FormLabel>
             <Input placeholder="Smith"/>
           </FormControl>
         </GridItem>
         <GridItem colSpan={2}>
-          <FormControl>
+          <FormControl >
             <FormLabel>Address</FormLabel>
             <Input placeholder="1 Yonge Street"/>
           </FormControl>
         </GridItem>
-        <GridItem colSpan={1}>
+        <GridItem colSpan={colSpan}>
           <FormControl>
             <FormLabel>City</FormLabel>
             <Input placeholder="Toronto"/>
           </FormControl>
         </GridItem>
-        <GridItem colSpan={1}>
+        <GridItem colSpan={colSpan}>
           <FormControl>
             <FormLabel>Country</FormLabel>
             <Select>

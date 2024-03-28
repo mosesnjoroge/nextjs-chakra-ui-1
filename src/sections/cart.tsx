@@ -37,7 +37,7 @@ export default function Cart() {
       </VStack>
       <HStack spacing={6} alignItems={"center"} w="full">
         <AspectRatio ratio={1} w={24}>
-          <Image src="" alt="displaying a red skateboard as product 1"/>
+          <Image src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" alt="displaying a red skateboard as product 1"/>
         </AspectRatio>
         <Stack
           spacing={0}
@@ -46,7 +46,7 @@ export default function Cart() {
           justifyContent="space-between"
           alignItems="center"
         >
-          <VStack w="full" spacing={0} alignItems="center">
+          <VStack w="full" spacing={0}>
             <Heading size="md">Penny board</Heading>
             <Text color={secondColor}>PNYCOMP27541</Text>
           </VStack>
