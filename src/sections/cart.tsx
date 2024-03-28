@@ -14,9 +14,13 @@ import {
 } from "@chakra-ui/react"
 
 export default function Cart() {
+  // color mode hook from chakraUI
   const {toggleColorMode} = useColorMode();
+
+  // background colors for light and dark mode
   const bgColor = useColorModeValue("gray.50","whiteAlpha.50");
-  const secondColor = useColorModeValue("gray.600","gray.400")
+  const secondColor = useColorModeValue("gray.600","gray.400");
+
   return(
     <VStack
     w="full"

@@ -14,7 +14,9 @@ import {
 from "@chakra-ui/react";
 
 export default function Details() {
+  // column span definition
   const colSpan = useBreakpointValue({base:2,md: 1});
+
   return(
     <VStack
       w="full"
@@ -71,7 +73,7 @@ export default function Details() {
           </Checkbox>
         </GridItem>
         <GridItem colSpan={2}>
-          <Button colorScheme="brand" size="lg" w="full">
+          <Button variant="primary" size="lg" w="full">
             Place Order
           </Button>
         </GridItem>
