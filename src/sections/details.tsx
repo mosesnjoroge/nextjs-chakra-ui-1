@@ -27,7 +27,7 @@ export default function Details() {
           If you already have an account, click her to log in.
         </Text>
       </VStack>
-      <SimpleGrid column={2} columnGap={3} rowGap={6}>
+      <SimpleGrid column={2} columnGap={3} rowGap={6} w={"full"}>
         <GridItem colSpan={1}>
           <FormControl>
             <FormLabel>First Name</FormLabel>
